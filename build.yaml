@@ -1,0 +1,6 @@
+---
+include:
+  - board: chocofi_left
+    shield: 
+  - board: chocofi_right
+    shield:
