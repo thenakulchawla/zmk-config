@@ -14,9 +14,9 @@
     default_layer {
       bindings = <
         &kp Q    &kp W    &kp F    &kp P    &kp B       &kp J    &lt COMBO L    &kp U    &kp Y    &kp SQT
-        &mt LSHFT A &mt LCTRL R &kp S  &kp T  &kp G       &kp M    &mt RCTRL N &mt RCTRL E &mt RSHFT I &mt RALT O
+        &kp A    &mt LSHFT R &mt LCTRL S &mt LCMD T &kp G       &kp M    &mt RCTRL N &mt RCTRL E &mt RSHFT I &mt RALT O
         &kp Z    &kp X    &kp C    &lt NUM D &kp V       &kp K    &kp H    &kp COMMA &kp DOT  &kp SLASH
-        &kp ESC  &lt SYM TAB    &kp SPACE       &mo NAV &kp ENTER
+        &kp ESC  &lt SYM TAB    &kp SPACE       &mo NAV &kp ENTER &trans
       >;
     };
 
@@ -25,7 +25,7 @@
         &kp ESC  &kp PERC &kp PLUS &kp PIPE &kp RPAREN   &kp LPAREN &kp AMPS &kp GRAVE &kp DOLLAR &kp SEMI
         &kp AT   &kp EXCL &kp COLON &kp EQUAL &kp RBRACE &kp LBRACE &kp MINUS &kp MINUS &kp HASH &kp SQT
         &kp ESC  &kp BSLH &kp CARET &kp TILDE &kp RBKT   &kp LBKT   &kp QMARK &kp ASTRK &kp LT   &kp GT
-        &trans   &trans   &trans   &trans              &trans      &trans
+        &trans   &trans   &trans          &trans   &trans   &trans
       >;
     };
 
@@ -34,7 +34,7 @@
         &trans   &trans   &trans   &mkp RCLK &trans      &trans   &kp PGDN  &kp PGUP  &kp LC(LS(DOLLAR)) &trans
         &trans   &mkp LCLK &mkp MWD &mkp MWU &mkp MCLK   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT         &trans
         &trans   &trans   &trans   &trans   &trans       &trans   &kp LC(LEFT) &kp LC(LS(TAB)) &kp LC(TAB) &trans
-        &trans   &kp LC(SPACE) &trans   &trans           &trans   &trans
+        &trans   &kp LC(SPACE) &trans          &trans   &trans   &trans
       >;
     };
 
@@ -43,7 +43,7 @@
         &trans   &trans   &trans   &trans   &trans       &trans  &kp N1  &kp N2  &kp N3  &kp BSPC
         &trans   &trans   &trans   &trans   &trans       &trans  &kp N4  &kp N5  &kp N6  &kp N0
         &trans   &trans   &trans   &trans   &trans       &kp DOT &kp N7  &kp N8  &kp N9  &kp SLASH
-        &trans   &trans   &trans   &trans              &trans      &trans
+        &trans   &trans   &trans          &trans   &trans   &trans
       >;
     };
 
@@ -52,7 +52,7 @@
         &trans        &kp W         &trans        &kp LC(LS(F))  &kp LC(MINUS)     &trans  &trans      &kp LGUI      &kp LC(PLUS)     &trans
         &kp LC(LG(Q)) &kp ESC       &kp R         &kp LC(LS(MINUS)) &kp G          &kp M   &kp N       &kp LC(LS(F4)) &kp LG(F5)      &kp LG(F12)
         &trans        &mo BT        &kp X         &kp C         &kp LC(LS(V))      &kp K   &kp H       &trans        &trans          &trans
-        &trans        &trans        &trans        &trans                           &trans  &trans
+        &trans        &trans        &trans                     &trans  &trans      &trans
       >;
     };
 
@@ -61,7 +61,7 @@
         &trans   &trans   &trans   &trans   &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
         &trans   &trans   &trans   &trans   &trans       &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
         &trans   &trans   &trans   &trans   &trans       &trans        &trans        &trans        &trans  &trans
-        &trans   &trans   &trans   &trans              &trans      &trans
+        &trans   &trans   &trans          &trans   &trans   &trans
       >;
     };
   };
