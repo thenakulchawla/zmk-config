@@ -5,7 +5,7 @@ This repository contains my personal ZMK firmware configuration for the Chocofi 
 ## Keyboard Setup
 
 I use two keyboards alternately, both configured with similar Colemak-DH layouts:
-- **Chocofi (36-key)**: ZMK firmware configuration (this repository) - currently using 34 keys, planning to utilize all 36 including the outer thumb keys
+- **Chocofi (36-key)**: ZMK firmware configuration (this repository)
 - **ZSA Voyager (52-key)**: QMK firmware via [Oryx configurator](https://configure.zsa.io/voyager/layouts/XeqG6/latest/0)
 
 Both keyboards share the same base Colemak-DH layout and home row modifier philosophy for consistent muscle memory across devices.
@@ -14,67 +14,64 @@ Both keyboards share the same base Colemak-DH layout and home row modifier philo
 
 ### Base Layer (Colemak-DH)
 ```
- Q   W   F   P   B     J   L   U   Y   '
+ Q   W   F   P   B     J   L   U   Y   "
  A   R   S   T   G     M   N   E   I   O
  Z   X   C   D   V     K   H   ,   .   /
-    ESC SYM SPC      NAV ENT
+   ESC BSPC 1   ENT  SPC TAB
 ```
-*Note: Currently using 34 of 36 keys. The outer thumb keys are available for future expansion.*
 
 The base layer uses the Colemak-DH layout, which places the most common letters on the home row and optimizes finger movement patterns. Home row modifiers are implemented:
-- Left hand: A (Shift), R (Ctrl)  
-- Right hand: N (Ctrl), E (Ctrl), I (Shift), O (Alt)
-- L key: Hold for COMBO layer, tap for 'L'
+- Left hand: A (none), R (Shift), S (Ctrl), T (Cmd)
+- Right hand: N (Cmd), E (Ctrl), I (Shift), O (Alt)
+- Q key: Hold for layer 5, tap for 'Q'
+- L key: Hold for layer 4 (COMBO), tap for 'L'  
+- ENTER key: Hold for layer 2 (NAV), tap for Enter
+- SPACE key: Hold for layer 3 (NUM), tap for Space
 
 ### Symbol Layer (SYM)
-Accessed by holding TAB, this layer provides symbols and special characters:
+Accessed via layer 1 (hold the "1" thumb key), this layer provides symbols and special characters:
 ```
-ESC  %   +   |   )     (   &   `   $   ;
+     %   +   |   )     (   &   `   $   ;
  @   !   :   =   }     {   -   -   #   '
 ESC  \   ^   ~   ]     [   ?   *   <   >
-    ESC     SPC      NAV ENT
 ```
 
 ### Navigation Layer (NAV)
-Accessed by holding the right thumb key, featuring mouse controls and navigation:
+Accessed via layer 2 (hold ENTER), featuring mouse controls and navigation:
 ```
-              RCL         PGDN PGUP  C+S+$    
+          RCL              PGUP PGDN              
     LCL  MWD  MWU  MCL    LEFT DOWN   UP   RIGHT
-                          C+LF prev   next tab  
-   C+SP     SPC      NAV ENT
+                          C+LF C+R→  C+S+TAB C+TAB
+   C+SP                              
 ```
 
 Mouse controls:
-- LCL/RCL/MCL: Left/Right/Middle mouse click
+- LCL/RCL/MCL: Left/Right/Middle mouse click  
 - MWD/MWU: Mouse wheel down/up
-- Navigation shortcuts: Ctrl+Left, Ctrl+Shift+Tab, Ctrl+Tab
+- Navigation shortcuts: Ctrl+Left, Ctrl+Right, Ctrl+Shift+Tab, Ctrl+Tab
 
 ### Number Layer (NUM)
-Accessed by holding D, provides a number pad layout:
+Accessed via layer 3 (hold SPACE), provides a number pad layout:
 ```
                         1   2   3   BS  
                         4   5   6   0   
                     .   7   8   9   /
-    ESC     SPC      NAV ENT
 ```
 
 ### Combo Layer (COMBO)
-Accessed by holding L, provides shortcuts and system controls:
+Accessed via layer 4 (hold L), provides shortcuts and system controls:
 ```
-     Ct+Cm+Q  W      Cm+Sh+F  Ct+-      Cmd  Ct++    
-     Esc      R      Cm+Sh+-  G    M    N    Cm+Sh+F4 Cm+F5  Cm+F12
-              BT     C        Cm+Sh+V  K    H           
-    ESC     SPC      NAV ENT
+C+Cmd+Q       S+Cmd+F  S+Cmd+P  C+-         Cmd+`  C+`     
+             Cmd+-    Cmd++              S+Cmd+4 Cmd+F5  Cmd+F12
+                                S+Cmd+V                    
 ```
-- BT on X position accesses Bluetooth pairing layer
 
 ### Bluetooth Layer (BT)
-Accessed from COMBO layer by pressing X:
+Layer for Bluetooth device management:
 ```
-                    BT_CLR   BT_0  BT_1  BT_2    
-                             BT_3  BT_4       
-                                   
-    ESC     SPC      NAV ENT
+                    BT_CLR   BT_PRV BT_NXT      
+                                         
+                             BT_0   BT_1   BT_2
 ```
 
 ## Key Features
