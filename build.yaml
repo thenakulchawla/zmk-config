@@ -1,6 +1,6 @@
 ---
 include:
-  - board: chocofi_left
-    shield: 
-  - board: chocofi_right
-    shield:
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view
