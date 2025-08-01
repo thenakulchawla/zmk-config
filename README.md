@@ -12,6 +12,10 @@ Both keyboards share the same base Colemak-DH layout and home row modifier philo
 
 ## Layout Overview
 
+### Visual Layout
+![Chocofi Layout](current.png)
+*Layout as rendered by ZMK keymap editors using the info.json configuration*
+
 ### Base Layer (Colemak-DH)
 ```
  Q   W   F   P   B     J   L   U   Y   "
