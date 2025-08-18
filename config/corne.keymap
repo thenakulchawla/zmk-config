@@ -70,10 +70,10 @@
         layer_NAV {
             label = "NAV";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans        &kp PG_UP      &kp PG_DN        &trans       &trans
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT      &kp DOWN       &kp UP           &kp RIGHT    &trans
-  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(LS(TAB))  &kp LC(TAB)  &trans
-                  &trans  &trans  &trans    &trans        &trans         &kp LC(SPACE)
+  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_UP           &kp PG_DN            &trans           &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN            &kp UP               &kp RIGHT        &trans
+  &trans  &trans  &trans  &trans  &trans    &trans    &kp LC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp LC(LS(TAB))  &kp RC(TAB)
+                  &trans  &trans  &trans    &trans    &trans              &kp LC(SPACE)
             >;
         };
 
