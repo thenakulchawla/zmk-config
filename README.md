@@ -41,18 +41,15 @@ ESC  \   ^   ~   ]     [   ?   *   <   >
 ```
 
 ### Navigation Layer (NAV)
-Accessed via layer 2 (hold ENTER), featuring mouse controls and navigation:
+Accessed via layer 2 (hold ENTER), featuring navigation controls:
 ```
-          RCL              PGUP PGDN              
-    LCL  MWD  MWU  MCL    LEFT DOWN   UP   RIGHT
-                          C+LF C+R→  C+S+TAB C+TAB
+                         PGUP PGDN              
+                       LEFT DOWN   UP   RIGHT
+                       C+LF C+R→  C+S+TAB C+TAB
    C+SP                              
 ```
 
-Mouse controls:
-- LCL/RCL/MCL: Left/Right/Middle mouse click  
-- MWD/MWU: Mouse wheel down/up
-- Navigation shortcuts: Ctrl+Left, Ctrl+Right, Ctrl+Shift+Tab, Ctrl+Tab
+Navigation shortcuts: Ctrl+Left, Ctrl+Right, Ctrl+Shift+Tab, Ctrl+Tab
 
 ### Number Layer (NUM)
 Accessed via layer 3 (hold SPACE), provides a number pad layout:
@@ -82,7 +79,6 @@ Layer for Bluetooth device management:
 
 - **Home Row Modifiers**: All modifier keys are accessible without leaving the home row
 - **Layer Taps**: Dual-function keys that act as layers when held, regular keys when tapped
-- **Mouse Integration**: Full mouse control without leaving the keyboard
 - **Combo Layer**: Advanced shortcuts accessed by holding L
 - **Bluetooth Control**: Easy device switching via combo layer
 - **Ergonomic Design**: Optimized for 36-key split keyboard ergonomics
