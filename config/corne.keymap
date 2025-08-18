@@ -14,18 +14,18 @@
 
         default_layer {
             bindings = <
-&lt 5 Q     &kp W          &kp F        &kp P        &kp B        &kp J    &lt 4 L     &kp U        &kp Y        &kp SEMICOLON
-&kp A       &mt LSHFT R    &mt LCTRL S  &mt LCMD T   &kp G        &kp M    &mt RCMD N  &mt RCTRL E  &mt RSHFT I  &mt RALT O
+&lt 5 &kp Q     &kp W          &kp F        &kp P        &kp B        &kp J    &lt 4 &kp L     &kp U        &kp Y        &kp SCLN
+&kp A       &mt LSHFT R    &mt LCTRL S  &mt LGUI T   &kp G        &kp M    &mt RGUI N  &mt RCTRL E  &mt RSHFT I  &mt RALT O
 &kp Z       &kp X          &kp C        &kp D        &kp V        &kp K    &kp H       &kp COMMA    &kp DOT      &kp SLASH
-&kp ESCAPE  &kp BACKSPACE  &mo 1        &lt 2 ENTER  &lt 3 SPACE  &kp TAB
+&kp ESC    &kp BSPC        &mo 1        &lt 2 &kp ENTER  &lt 3 &kp SPACE  &kp TAB
             >;
         };
 
         layer_SYM {
             bindings = <
-&trans   &kp PERCENT  &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DOLLAR  &kp DOUBLE_QUOTES
-&kp AT   &kp EXCL     &kp COLON  &kp EQUAL  &kp RBRC  &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH    &kp SQT
-&kp ESC  &kp BSLH     &kp CARET  &kp TILDE  &kp RBKT  &kp LBKT  &kp QMARK  &kp ASTRK  &kp LT      &kp GT
+&trans   &kp PERCENT  &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp DQT
+&kp AT   &kp EXCL     &kp COLON  &kp EQUAL  &kp RBRKT  &kp LBRKT  &kp MINUS  &kp MINUS  &kp HASH    &kp SQT
+&kp ESC  &kp BSLH     &kp CARET  &kp TILDE  &kp RBRKT  &kp LBRKT  &kp QUESTION  &kp ASTRK  &kp LT      &kp GT
 &trans   &trans       &trans     &trans     &trans    &trans
             >;
         };
@@ -34,7 +34,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP   &kp PAGE_DOWN        &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp UP               &kp RIGHT        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp RC(RIGHT_ARROW)  &kp RC(RS(TAB))  &kp RC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp RC(RIGHT)  &kp RCS(TAB)  &kp RC(TAB)
 &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
