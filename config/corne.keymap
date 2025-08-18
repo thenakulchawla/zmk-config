@@ -26,6 +26,7 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
             quick-tap-ms = <200>;
         };
 
@@ -33,6 +34,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFT_TAP";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
@@ -48,60 +50,60 @@
         default_layer {
             label = "DEF";
             bindings = <
-   &lt 5 Q         &kp W             &kp F                     &kp P                    &kp B        &kp J    &lt 4 L                   &kp U                     &kp Y             &kp SEMICOLON
-   &kp A           &hm LEFT_SHIFT R  &hm LCTRL S               &hm LEFT_GUI T           &kp G        &kp M    &hm RIGHT_GUI N           &hm RCTRL E               &hm RIGHT_SHIFT I &kp O
-   &kp Z           &kp X             &kp C                     &kp D                    &kp V        &kp K    &kp H                     &kp COMMA                 &kp PERIOD        &kp SLASH
-                                     &kp ESC                   &kp BACKSPACE            &mo 1        &lt 2 ENTER  &lt 3 SPACE          &kp TAB
+  &lt 5 Q  &kp W             &kp F        &kp P           &kp B    &kp J        &lt 4 L          &kp U        &kp Y              &kp SEMICOLON
+  &kp A    &hm LEFT_SHIFT R  &hm LCTRL S  &hm LEFT_GUI T  &kp G    &kp M        &hm RIGHT_GUI N  &hm RCTRL E  &hm RIGHT_SHIFT I  &kp O
+  &kp Z    &kp X             &kp C        &kp D           &kp V    &kp K        &kp H            &kp COMMA    &kp PERIOD         &kp SLASH
+                             &kp ESC      &kp BACKSPACE   &mo 1    &lt 2 ENTER  &lt 3 SPACE      &kp TAB
             >;
         };
 
         layer_SYM {
             label = "SYM";
             bindings = <
-   &trans   &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp SEMI
-   &kp AT   &kp EXCL   &kp COLON  &kp EQUAL  &kp RBRC  &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH  &kp SQT
-   &kp ESC  &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT  &kp LBKT  &kp QMARK  &kp ASTRK  &kp LT    &kp GT
-                       &trans     &trans     &trans    &trans    &trans     &trans
+  &trans   &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR    &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp DOUBLE_QUOTES
+  &kp AT   &kp EXCL   &kp COLON  &kp EQUAL  &kp RBRC    &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH  &kp SQT
+  &kp ESC  &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT    &kp LBKT  &kp QMARK  &kp ASTRK  &kp LT    &kp GT
+                      &trans     &trans     &trans      &trans    &trans     &trans
             >;
         };
 
         layer_NAV {
             label = "NAV";
             bindings = <
-   &trans         &trans  &trans  &trans  &trans  &trans        &kp PG_UP      &kp PG_DN        &trans       &trans
-   &trans         &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN       &kp UP           &kp RIGHT    &trans
-   &trans         &trans  &trans  &trans  &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(LS(TAB))  &kp LC(TAB)  &trans
-                          &trans  &trans  &trans  &trans        &trans         &kp LC(SPACE)
+  &trans  &trans  &trans  &trans  &trans    &trans        &kp PG_UP      &kp PG_DN        &trans       &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT      &kp DOWN       &kp UP           &kp RIGHT    &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(LS(TAB))  &kp LC(TAB)  &trans
+                  &trans  &trans  &trans    &trans        &trans         &kp LC(SPACE)
             >;
         };
 
         layer_NUM {
             label = "NUM";
             bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans   &kp N1  &kp N2  &kp N3  &kp BSPC
-   &trans  &trans  &trans  &trans  &trans  &trans   &kp N4  &kp N5  &kp N6  &kp N0
-   &trans  &trans  &trans  &trans  &trans  &kp DOT  &kp N7  &kp N8  &kp N9  &kp SLASH
-                   &trans  &trans  &trans  &trans   &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans   &kp N1  &kp N2  &kp N3  &kp BSPC
+  &trans  &trans  &trans  &trans  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp N0
+  &trans  &trans  &trans  &trans  &trans    &kp DOT  &kp N7  &kp N8  &kp N9  &kp SLASH
+                  &trans  &trans  &trans    &trans   &trans  &trans
             >;
         };
 
         layer_COMBO {
             label = "COMBO";
             bindings = <
-   &kp LC(LG(Q))  &trans         &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)  &trans  &trans          &kp LG(GRAVE)  &kp LC(GRAVE)  &trans
-   &trans         &kp LG(MINUS)  &kp LG(PLUS)   &trans         &trans         &trans  &kp LS(LG(N4))  &kp LG(F5)     &kp LG(F12)    &trans
-   &trans         &trans         &trans         &trans         &kp LS(LG(V))  &trans  &trans          &trans         &trans         &trans
-                                 &trans         &trans         &trans         &trans  &trans          &trans
+  &kp LC(LG(Q))  &trans         &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)    &trans  &trans          &kp LG(GRAVE)  &kp LC(GRAVE)  &trans
+  &trans         &kp LG(MINUS)  &kp LG(PLUS)   &trans         &trans           &trans  &kp LS(LG(N4))  &kp LG(F5)     &kp LG(F12)    &trans
+  &trans         &trans         &trans         &trans         &kp LS(LG(V))    &trans  &trans          &trans         &trans         &trans
+                                &trans         &trans         &trans           &trans  &trans          &trans
             >;
         };
 
         layer_BT {
             label = "BT";
             bindings = <
-   &trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &bt BT_PRV    &bt BT_NXT    &trans        &trans
-   &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans
-   &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
-                   &trans  &trans  &trans      &trans  &trans        &trans
+  &trans  &trans  &trans  &trans  &bt BT_CLR    &trans  &bt BT_PRV    &bt BT_NXT    &trans        &trans
+  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &trans
+  &trans  &trans  &trans  &trans  &trans        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
+                  &trans  &trans  &trans        &trans  &trans        &trans
             >;
         };
     };
