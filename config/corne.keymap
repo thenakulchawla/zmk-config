@@ -8,10 +8,10 @@
 
         default_layer {
             bindings = <
-&lt 5 &kp Q     &kp W          &kp F        &kp P        &kp B        &kp J    &lt 4 &kp L     &kp U        &kp Y        &kp DQT
+&kp Q       &kp W          &kp F        &kp P        &kp B        &kp J    &lt 4 &kp L     &kp U        &kp Y        &kp DQT
 &kp A       &mt LSHFT R    &mt LCTRL S  &mt LGUI T   &kp G        &kp M    &mt RGUI N  &mt RCTRL E  &mt RSHFT I  &mt RALT O
 &kp Z       &kp X          &kp C        &kp D        &kp V        &kp K    &kp H       &kp COMMA    &kp DOT      &kp SLASH
-&kp ESC    &kp BSPC        &mo 1        &lt 2 &kp ENTER  &lt 3 &kp SPACE  &kp TAB
+                           &kp ESC      &kp BSPC     &mo 1        &lt 2 &kp ENTER  &lt 3 &kp SPACE  &kp TAB
             >;
         };
 
@@ -20,7 +20,7 @@
 &trans   &kp PRCNT    &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp SEMI
 &kp AT   &kp EXCL     &kp COLON  &kp EQUAL  &kp RBRC  &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH  &kp SQT
 &kp ESC  &kp BSLH     &kp CARET  &kp TILDE  &kp RBKT  &kp LBKT  &kp QMARK  &kp ASTRK  &kp LT    &kp GT
-&trans   &trans       &trans     &trans     &trans    &trans
+                      &trans     &trans     &trans    &trans    &trans     &trans
             >;
         };
 
@@ -29,7 +29,7 @@
 &trans  &trans  &trans  &trans  &trans     &trans    &kp PG_UP     &kp PG_DN     &trans           &trans
 &trans  &trans  &trans  &trans  &trans     &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT        &trans
 &trans  &trans  &trans  &trans  &trans     &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(LS(TAB))  &kp LC(TAB)  &trans
-&kp LC(SPACE)  &trans  &trans  &trans  &trans  &trans
+                &kp LC(SPACE)  &trans     &trans    &trans        &trans           &trans
             >;
         };
 
@@ -38,7 +38,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp BSPC
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0
 &trans  &trans  &trans  &trans  &trans  &kp DOT &kp N7  &kp N8  &kp N9  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -46,17 +46,17 @@
             bindings = <
 &kp LC(LG(Q))  &trans        &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)  &trans  &trans        &kp LG(GRAVE)  &kp LC(GRAVE)  &trans
 &trans         &kp LG(MINUS) &kp LG(PLUS)   &trans         &trans         &trans  &kp LS(LG(N4)) &kp LG(F5)     &kp LG(F12)    &trans
-&trans            &none   &none          &trans         &kp LS(LG(V))  &none   &trans  &trans                &trans         &trans
-&trans            &trans  &trans         &trans         &trans         &trans
+&trans         &trans        &trans         &trans         &kp LS(LG(V))  &trans  &trans        &trans         &trans         &trans
+                &trans        &trans         &trans         &trans        &trans  &trans
             >;
         };
 
         layer_BT {
             bindings = <
-&trans  &trans  &trans  &trans  &bt BT_CLR  &none   &bt BT_PRV    &bt BT_NXT    &trans        &trans
-&trans  &trans  &trans  &trans  &trans      &none   &none         &none         &trans        &trans
+&trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &bt BT_PRV    &bt BT_NXT    &trans        &trans
+&trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
-&trans  &trans  &trans  &trans  &trans      &trans
+                &trans  &trans  &trans      &trans  &trans        &trans
             >;
         };
     };
