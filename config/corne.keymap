@@ -17,9 +17,9 @@
 
         layer_SYM {
             bindings = <
-&trans   &kp PERC     &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp SEMI
-&kp AT   &kp EXCL     &kp COLON  &kp EQUAL  &kp RBRC  &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH  &kp APOS
-&kp ESC  &kp BSLH     &kp CARET  &kp TILDE  &kp RBKT  &kp LBKT  &kp QMARK  &kp STAR   &kp LT    &kp GT
+&trans   &kp PRCNT    &kp PLUS   &kp PIPE   &kp RPAR  &kp LPAR  &kp AMPS   &kp GRAVE  &kp DLLR  &kp SEMI
+&kp AT   &kp EXCL     &kp COLON  &kp EQUAL  &kp RBRC  &kp LBRC  &kp MINUS  &kp MINUS  &kp HASH  &kp SQT
+&kp ESC  &kp BSLH     &kp CARET  &kp TILDE  &kp RBKT  &kp LBKT  &kp QMARK  &kp ASTRK  &kp LT    &kp GT
 &trans   &trans       &trans     &trans     &trans    &trans
             >;
         };
