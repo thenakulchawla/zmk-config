@@ -92,7 +92,7 @@
             bindings = <
   &kp LC(LG(Q))  &trans  &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)        &trans  &trans  &kp LG(GRAVE)         &kp LC(GRAVE)      &trans
   &trans         &trans  &kp LG(MINUS)  &kp LG(PLUS)   &kp LC(LS(MINUS))    &trans  &trans  &kp RS(RG(NUMBER_4))  &kp LA(LS(LEFT))   &trans
-  &trans         &trans  &trans         &trans         &kp LS(LG(V))        &trans  &trans  &trans                &kp LC(LS(MINUS))  &trans
+  &trans         &trans  &trans         &trans         &kp LS(LG(V))        &trans  &trans  &trans                &kp RA(RS(RIGHT))  &trans
                          &trans         &trans         &trans               &trans  &trans  &trans
             >;
         };
