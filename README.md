@@ -1,6 +1,6 @@
 # Corne ZMK Configuration
 
-This repository contains my personal ZMK firmware configuration for the Chocofi 36-key split keyboard, featuring a Colemak-DH layout optimized for comfort and efficiency.
+This repository contains my personal ZMK firmware configuration for the Corne36-key split keyboard, featuring a Colemak-DH layout optimized for comfort and efficiency.
 
 ## Keyboard Setup
 
@@ -14,7 +14,7 @@ All the keyboards share the same base Colemak-DH layout and home row modifier ph
 ## Layout Overview
 
 ### Visual Layout
-![Chocofi Layout](current.png)
+![Corne Layout](current.png)
 *Layout as rendered by ZMK keymap editors using the info.json configuration*
 
 ### Base Layer (Colemak-DH)
@@ -87,4 +87,4 @@ Layer for Bluetooth device management:
 
 ## Building
 
-This configuration is designed to work with ZMK's build system. Add this repository as a ZMK config and build for the Chocofi board.
+This configuration is designed to work with ZMK's build system. Add this repository as a ZMK config and build for the Corneboard.
