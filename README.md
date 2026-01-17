@@ -1,14 +1,15 @@
-# Chocofi ZMK Configuration
+# Corne ZMK Configuration
 
 This repository contains my personal ZMK firmware configuration for the Chocofi 36-key split keyboard, featuring a Colemak-DH layout optimized for comfort and efficiency.
 
 ## Keyboard Setup
 
 I use two keyboards alternately, both configured with similar Colemak-DH layouts:
+- **Corne (36-key)**: ZMK firmware configuration (this repository)
 - **Chocofi (36-key)**: ZMK firmware configuration (this repository)
 - **ZSA Voyager (52-key)**: QMK firmware via [Oryx configurator](https://configure.zsa.io/voyager/layouts/XeqG6/latest/0)
 
-Both keyboards share the same base Colemak-DH layout and home row modifier philosophy for consistent muscle memory across devices.
+All the keyboards share the same base Colemak-DH layout and home row modifier philosophy for consistent muscle memory across devices.
 
 ## Layout Overview
 
