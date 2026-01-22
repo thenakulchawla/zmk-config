@@ -85,6 +85,67 @@ Layer for Bluetooth device management:
 - **Ergonomic Design**: Optimized for 36-key split keyboard ergonomics
 - **Colemak-DH**: Modern layout designed for English typing efficiency
 
+## Hardware Setup
+
+### Prospector Dongle with YADS Display
+
+This configuration uses a **Prospector dongle** as the central device with the **YADS (Yet Another Dongle Screen)** firmware for the color LCD display.
+
+**Components:**
+- **Dongle**: XIAO BLE with Prospector (Waveshare 1.69" round LCD)
+- **Left/Right halves**: nice!nano v2 (both as peripherals, no OLEDs)
+
+**Firmware Stack:**
+- ZMK main branch (Zephyr 4.1)
+- YADS upgrade-4.1 branch
+- ZMK Studio enabled
+
+### Firmware Files
+
+After GitHub Actions builds complete, download these files:
+- `xiao_corne_dongle_yads.uf2` - Flash to Prospector dongle
+- `nice_corne_left_peripheral.uf2` - Flash to left half
+- `nice_corne_right_peripheral.uf2` - Flash to right half
+
+### Flashing Procedure
+
+1. **Flash settings_reset first** on all three devices to clear pairing data
+2. **Flash the dongle** with `xiao_corne_dongle_yads.uf2`
+3. **Flash the left half** with `nice_corne_left_peripheral.uf2`
+4. **Flash the right half** with `nice_corne_right_peripheral.uf2`
+
+### Pairing Order (Important!)
+
+After flashing, pair devices in this exact order for correct battery display:
+1. **Left half first** - Power on and let it pair with dongle
+2. **Right half second** - Power on and let it pair with dongle
+
+### ZMK Studio
+
+This firmware has **ZMK Studio** enabled, allowing you to modify your keymap in real-time without reflashing:
+1. Connect the dongle via USB
+2. Visit [ZMK Studio](https://zmk.studio)
+3. Pair with your keyboard
+4. Edit layers, bindings, and behaviors live
+
+### YADS Display Controls
+
+The YADS display can be controlled via F22-F24 keys (extended function keys in USB HID spec):
+- **F22**: Toggle display on/off
+- **F23**: Decrease brightness
+- **F24**: Increase brightness
+
+These are mapped on **Layer 5 (BT layer)**: Hold Q, then press L/U/Y positions.
+
+### YADS Display Features
+
+- Words per minute (WPM) counter
+- Active layer indicator
+- Modifier key status
+- Connection status (USB/BLE)
+- Battery levels for both halves
+- Auto-brightness via ambient light sensor
+
 ## Building
 
-This configuration is designed to work with ZMK's build system. Add this repository as a ZMK config and build for the Corneboard.
+This configuration is designed to work with ZMK's build system. Push changes to GitHub and the Actions workflow will automatically build firmware files.
