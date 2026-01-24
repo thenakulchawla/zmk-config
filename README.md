@@ -98,7 +98,6 @@ This configuration uses a **Prospector dongle** as the central device with the *
 **Firmware Stack:**
 - ZMK main branch (Zephyr 4.1)
 - YADS upgrade-4.1 branch
-- ZMK Studio enabled
 
 ### Firmware Files
 
@@ -119,14 +118,6 @@ After GitHub Actions builds complete, download these files:
 After flashing, pair devices in this exact order for correct battery display:
 1. **Left half first** - Power on and let it pair with dongle
 2. **Right half second** - Power on and let it pair with dongle
-
-### ZMK Studio
-
-This firmware has **ZMK Studio** enabled, allowing you to modify your keymap in real-time without reflashing:
-1. Connect the dongle via USB
-2. Visit [ZMK Studio](https://zmk.studio)
-3. Pair with your keyboard
-4. Edit layers, bindings, and behaviors live
 
 ### YADS Display Controls
 
