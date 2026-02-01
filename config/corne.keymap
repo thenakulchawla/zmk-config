@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT_L 0
 
@@ -100,7 +101,7 @@
         layer_BT {
             label = "BT";
             bindings = <
-  &trans  &trans  &trans  &trans  &bt BT_CLR    &trans   &kp F22       &kp F23       &kp F24       &trans
+  &trans  &trans  &trans  &out OUT_TOG  &bt BT_CLR    &trans   &kp F22       &kp F23       &kp F24       &trans
   &trans  &trans  &trans  &trans  &trans        &trans   &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans
   &trans  &trans  &trans  &trans  &trans        &trans   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
                   &trans  &trans  &trans        &trans   &trans        &trans
