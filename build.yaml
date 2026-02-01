@@ -1,6 +1,53 @@
 ---
 include:
+  # ============================================
+  # Nice!View Gem variant
+  # ============================================
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
+    shield: corne_left nice_view_adapter nice_view_gem
+    artifact-name: corne_left_niceview_gem
   - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
+    shield: corne_right nice_view_adapter nice_view_gem
+    artifact-name: corne_right_niceview_gem
+
+  # ============================================
+  # OLED variant (mctechnology17/nice-oled)
+  # ============================================
+  - board: nice_nano_v2
+    shield: corne_left nice_oled
+    artifact-name: corne_left_oled
+  - board: nice_nano_v2
+    shield: corne_right nice_oled
+    artifact-name: corne_right_oled
+
+  # ============================================
+  # Dongle variant (Prospector + YADS)
+  # ============================================
+  - board: xiao_ble
+    shield: corne_dongle dongle_screen
+    artifact-name: corne_dongle_yads
+
+  # Peripheral halves for dongle setup
+  - board: nice_nano
+    shield: corne_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_left_peripheral
+
+  - board: nice_nano
+    shield: corne_right
+    artifact-name: corne_right_peripheral
+
+  # ============================================
+  # Settings Reset
+  # ============================================
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: nice_nano_v2_settings_reset
+
+  - board: nice_nano
+    shield: settings_reset
+    artifact-name: nice_nano_settings_reset
+
+  - board: xiao_ble
+    shield: settings_reset
+    artifact-name: xiao_ble_settings_reset

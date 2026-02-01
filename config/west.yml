@@ -2,10 +2,33 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # Nice!View Gem display widget
+    - name: m165437
+      url-base: https://github.com/M165437
+    # OLED display widget
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+    # YADS dongle screen
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
+
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+
+    - name: zmk-dongle-screen
+      remote: janpfischer
+      revision: main
+
   self:
     path: config
