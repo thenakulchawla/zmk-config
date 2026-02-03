@@ -49,7 +49,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "DEF";
+            label = "base";
             bindings = <
   &lt 5 Q         &kp W             &kp F        &kp P           &kp B    &kp J        &lt 4 L          &kp U        &kp Y              &kp SEMICOLON
   &hm LEFT_ALT A  &hm LEFT_SHIFT R  &hm LCTRL S  &hm LEFT_GUI T  &kp G    &kp M        &hm RIGHT_GUI N  &hm RCTRL E  &hm RIGHT_SHIFT I  &hm RIGHT_ALT O
@@ -59,7 +59,7 @@
         };
 
         layer_SYM {
-            label = "SYM";
+            label = "sym";
             bindings = <
   &kp CAPS  &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR    &kp LPAR  &kp AMPS   &kp GRAVE       &kp DLLR  &kp DOUBLE_QUOTES
   &kp AT    &kp EXCL   &kp COLON  &kp EQUAL  &kp RBRC    &kp LBRC  &kp MINUS  &kp UNDERSCORE  &kp HASH  &kp SQT
@@ -69,7 +69,7 @@
         };
 
         layer_NAV {
-            label = "NAV";
+            label = "nav";
             bindings = <
   &trans  &trans  &trans                  &trans                   &trans    &trans    &kp PG_UP           &kp PG_DN            &trans           &trans
   &trans  &trans  &kp LA(LC(LEFT_ARROW))  &kp RA(RC(RIGHT_ARROW))  &trans    &kp LEFT  &kp DOWN            &kp UP               &kp RIGHT        &trans
@@ -79,7 +79,7 @@
         };
 
         layer_NUM {
-            label = "NUM";
+            label = "num";
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans   &kp N1  &kp N2  &kp N3  &kp BSPC
   &trans  &trans  &trans  &trans  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp N0
@@ -89,7 +89,7 @@
         };
 
         layer_COMBO {
-            label = "COMBO";
+            label = "combo";
             bindings = <
   &kp LC(LG(Q))  &trans  &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)        &trans  &trans  &kp LG(GRAVE)         &kp LC(GRAVE)      &trans
   &trans         &trans  &kp LG(MINUS)  &kp LG(PLUS)   &kp LC(LS(MINUS))    &trans  &trans  &kp RS(RG(NUMBER_4))  &kp LA(LS(LEFT))   &trans
@@ -99,7 +99,7 @@
         };
 
         layer_BT {
-            label = "BT";
+            label = "ble";
             bindings = <
   &trans  &trans  &trans  &out OUT_TOG  &bt BT_CLR    &trans   &kp F23       &kp F24       &trans       &trans
   &trans  &trans  &trans  &trans  &trans        &trans   &bt BT_SEL 3   &bt BT_SEL 4   &trans        &trans
