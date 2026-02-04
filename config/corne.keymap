@@ -16,35 +16,6 @@
     tapping-term-ms = <200>;
 };
 
-/*
- * custom battery map for 1000mah
- */
-/ {
-    zmk_battery_levels: zmk_battery_levels {
-        compatible = "zmk,battery-voltage-divider";
-        /* voltage-levels = <millivolts percentage> */
-        voltage-levels = <
-            4200 100
-            4100 90
-            4000 80
-            3900 70
-            3800 60
-            3700 40
-            3600 20
-            3500 10
-            3400 0
-        >;
-    };
-
-    chosen {
-        zmk,battery = &vbatt;
-    };
-};
-
-&vbatt {
-    battery-levels = <&zmk_battery_levels>;
-};
-
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 
