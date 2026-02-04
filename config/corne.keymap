@@ -103,7 +103,7 @@
         layer_BT {
             label = "ble";
             bindings = <
-  &trans  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_TOG  &bt BT_CLR    &trans   &kp F23       &kp F24       &trans       &trans
+  &trans  &ext_power EP_OFF  &rgb_ug RGB_TOG  &out OUT_TOG  &bt BT_CLR    &trans   &kp F23       &kp F24       &trans       &trans
   &trans  &trans  &trans  &trans  &trans        &trans   &bt BT_SEL 3   &bt BT_SEL 4   &trans        &trans
   &trans  &trans  &trans  &trans  &trans        &trans   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
                   &trans  &trans  &trans        &trans   &trans        &trans
