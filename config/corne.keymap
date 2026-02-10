@@ -49,6 +49,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "base";
             label = "base";
             bindings = <
   &lt 5 Q         &kp W             &kp F        &kp P           &kp B    &kp J        &lt 4 L          &kp U        &kp Y              &kp SEMICOLON
@@ -59,6 +60,7 @@
         };
 
         layer_SYM {
+            display-name = "sym";
             label = "sym";
             bindings = <
   &kp CAPS  &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR    &kp LPAR  &kp AMPS   &kp GRAVE       &kp DLLR  &kp DOUBLE_QUOTES
@@ -69,6 +71,7 @@
         };
 
         layer_NAV {
+            display-name = "nav";
             label = "nav";
             bindings = <
   &trans  &trans  &trans                  &trans                   &trans    &trans    &kp PG_UP           &kp PG_DN            &trans           &trans
@@ -79,6 +82,7 @@
         };
 
         layer_NUM {
+            display-name = "num";
             label = "num";
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans   &kp N1  &kp N2  &kp N3  &kp BSPC
@@ -89,6 +93,7 @@
         };
 
         layer_COMBO {
+            display-name = "combo";
             label = "combo";
             bindings = <
   &kp LC(LG(Q))  &trans  &kp LS(LG(F))  &kp LS(LG(P))  &kp LC(MINUS)        &trans  &trans  &kp LG(GRAVE)         &kp LC(GRAVE)      &trans
@@ -99,6 +104,7 @@
         };
 
         layer_BT {
+            display-name = "ble";
             label = "ble";
             bindings = <
   &trans  &trans  &trans  &out OUT_TOG  &bt BT_CLR    &trans   &kp F23       &kp F24       &trans       &trans
