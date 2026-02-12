@@ -17,6 +17,11 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: right
 
+  # Non-dongle test build (left as central, for LED/ext_power testing)
+  - board: nice_nano
+    shield: corne_left
+    artifact-name: left_central_test
+
   # Settings reset for nice_nano
   - board: nice_nano
     shield: settings_reset
