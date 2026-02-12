@@ -1,8 +1,8 @@
 ---
 include:
-  # Prospector Dongle with YADS display
+  # Prospector Dongle with Operator screen
   - board: xiao_ble
-    shield: corne_dongle dongle_screen
+    shield: corne_dongle prospector_adapter
     artifact-name: dongle
 
   # Left half as peripheral (override default central role)

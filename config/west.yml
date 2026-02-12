@@ -2,18 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
       import: app/west.yml
 
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: upgrade-4.1
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: 086802d848c52117dff32af8311ee65375a13245
 
   self:
     path: config
