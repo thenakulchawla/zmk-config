@@ -7,13 +7,13 @@ include:
 
   # Left half as peripheral (override default central role)
   - board: nice_nano
-    shield: corne_left nice_oled
+    shield: corne_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: left
 
   # Right half as peripheral (default)
   - board: nice_nano
-    shield: corne_right nice_oled
+    shield: corne_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: right
 

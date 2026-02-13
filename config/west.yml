@@ -4,8 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+
 
   projects:
     - name: zmk
@@ -17,9 +16,6 @@ manifest:
       remote: carrefinho
       revision: 086802d848c52117dff32af8311ee65375a13245
 
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
 
   self:
     path: config
