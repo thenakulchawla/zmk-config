@@ -40,7 +40,7 @@ zmk-config/
 ## Keyboards
 
 ### Chocofi (Standalone)
-- **Board:** nice_nano_v2
+- **Board:** nice_nano
 - **Shield:** corne_left/right nice_view_adapter nice_view_gem
 - **Display:** Nice!View with Gem widget
 - **Build artifacts:** `chocofi_left.uf2`, `chocofi_right.uf2`, `chocofi_reset.uf2`
