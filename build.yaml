@@ -1,28 +1,46 @@
 ---
 include:
-  # Prospector Dongle with Operator screen
+  # ============================================
+  # Chocofi (nice_nano_v2 standalone)
+  # ============================================
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view_gem
+    artifact-name: chocofi_left
+  - board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view_gem
+    artifact-name: chocofi_right
+
+  # ============================================
+  # Corne with Dongle (nice_nano peripherals)
+  # ============================================
+  - board: nice_nano
+    shield: corne_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_left
+
+  - board: nice_nano
+    shield: corne_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_right
+
+  # ============================================
+  # Dongle (xiao_ble central with Prospector)
+  # ============================================
   - board: xiao_ble
     shield: corne_dongle prospector_adapter
     artifact-name: dongle
 
-  # Left half as peripheral (override default central role)
-  - board: nice_nano
-    shield: corne_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: left
+  # ============================================
+  # Settings Reset
+  # ============================================
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: chocofi_reset
 
-  # Right half as peripheral (default)
-  - board: nice_nano
-    shield: corne_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: right
-
-  # Settings reset for nice_nano
   - board: nice_nano
     shield: settings_reset
-    artifact-name: peripheral_reset
+    artifact-name: corne_reset
 
-  # Settings reset for XIAO dongle
   - board: xiao_ble
     shield: settings_reset
     artifact-name: dongle_reset
