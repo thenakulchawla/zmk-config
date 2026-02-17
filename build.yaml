@@ -1,12 +1,12 @@
 ---
 include:
   # ============================================
-  # Chocofi (nice_nano_v2 standalone)
+  # Chocofi (nice_nano standalone)
   # ============================================
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: corne_left nice_view_adapter nice_view_gem
     artifact-name: chocofi_left
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: corne_right nice_view_adapter nice_view_gem
     artifact-name: chocofi_right
 
@@ -33,7 +33,7 @@ include:
   # ============================================
   # Settings Reset
   # ============================================
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     artifact-name: chocofi_reset
 
