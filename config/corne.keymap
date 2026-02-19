@@ -55,7 +55,7 @@
   &lt 5 Q         &kp W             &kp F        &kp P           &kp B    &kp J        &lt 4 L          &kp U        &kp Y              &kp SEMICOLON
   &hm LEFT_ALT A  &hm LEFT_SHIFT R  &hm LCTRL S  &hm LEFT_GUI T  &kp G    &kp M        &hm RIGHT_GUI N  &hm RCTRL E  &hm RIGHT_SHIFT I  &hm RIGHT_ALT O
   &kp Z           &kp X             &kp C        &kp D           &kp V    &kp K        &kp H            &kp COMMA    &kp PERIOD         &kp SLASH
-                                    &kp F12      &kp BACKSPACE   &mo 1    &lt 2 ENTER  &lt 3 SPACE      &kp TAB
+                                    &kp ESC      &kp BACKSPACE   &mo 1    &lt 2 ENTER  &lt 3 SPACE      &kp TAB
             >;
         };
 
@@ -65,7 +65,7 @@
             bindings = <
   &kp CAPS  &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR    &kp LPAR  &kp AMPS   &kp GRAVE       &kp DLLR  &kp DOUBLE_QUOTES
   &kp AT    &kp EXCL   &kp COLON  &kp EQUAL  &kp RBRC    &kp LBRC  &kp MINUS  &kp UNDERSCORE  &kp HASH  &kp SQT
-  &kp ESC   &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT    &kp LBKT  &kp QMARK  &kp ASTRK       &kp LT    &kp GT
+  &kp F12   &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT    &kp LBKT  &kp QMARK  &kp ASTRK       &kp LT    &kp GT
                        &trans     &trans     &trans      &trans    &trans     &trans
             >;
         };
