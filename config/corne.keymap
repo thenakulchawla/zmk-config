@@ -62,7 +62,7 @@
             bindings = <
   &kp CAPS  &kp PRCNT  &kp PLUS   &kp PIPE   &kp RPAR    &kp LPAR  &kp AMPS   &kp GRAVE       &kp DLLR  &kp DOUBLE_QUOTES
   &kp AT    &kp EXCL   &kp COLON  &kp EQUAL  &kp RBRC    &kp LBRC  &kp MINUS  &kp UNDERSCORE  &kp HASH  &kp SQT
-  &kp F12   &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT    &kp LBKT  &kp QMARK  &kp ASTRK       &kp LT    &kp GT
+  &kp ESC   &kp BSLH   &kp CARET  &kp TILDE  &kp RBKT    &kp LBKT  &kp QMARK  &kp ASTRK       &kp LT    &kp GT
                        &trans     &trans     &trans      &trans    &trans     &trans
             >;
         };
@@ -81,7 +81,7 @@
             label = "num";
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans   &kp N1  &kp N2  &kp N3  &kp BSPC
-  &trans  &trans  &trans  &trans  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp N0
+  &trans  &trans  &trans  &trans  &trans    &kp F12   &kp N4  &kp N5  &kp N6  &kp N0
   &trans  &trans  &trans  &trans  &trans    &kp DOT  &kp N7  &kp N8  &kp N9  &kp SLASH
                   &trans  &trans  &trans    &trans   &trans  &trans
             >;
